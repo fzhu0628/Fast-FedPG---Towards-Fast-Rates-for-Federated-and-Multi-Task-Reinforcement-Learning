@@ -58,7 +58,7 @@ In this case, no heterogeneity bias is present since gradients are synchronized 
 ### Assumptions
 - The value function $J_i$ for each agent is $L$-smooth w.r.t. $\theta$.
 - The variance of the noisy truncated gradient $\hat{\nabla}_K J_i(\cdot)$ is bounded by $\sigma^2$.
-- The truncation error is at most D\gamma^K
+- The truncation error is at most $D\gamma^K$.
 ### Main challenges
 - Effect of **regret-heterogeneity** & **intermittent communication**: Agents tend to drift towards their own locally optimal parameters.
 - Effect of **non-convexity**: The value functions are non-convex.
