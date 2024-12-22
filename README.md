@@ -63,3 +63,25 @@ In this case, no heterogeneity bias is present since gradients are synchronized 
 - Effect of **regret-heterogeneity** & **intermittent communication**: Agents tend to drift towards their own locally optimal parameters.
 - Effect of **non-convexity**: The value functions are non-convex.
 - Effect of **noise and truncation**.
+### Main results
+- Under a suitable choice of step-size, Fast-FedPG guarantees under the gradient-domination condition:
+
+![image](https://github.com/user-attachments/assets/22ad1df0-6ebe-4963-a1b5-45cfeb47874f)
+
+where $G$ and $\mu$ are constants.
+
+- Takeaways:
+  * Up to round 𝑇, the total sample complexity is 𝑁𝐻𝑇, and our result features $\tilde{O}(1/(NHT))$, which is the best one could hope for.
+  * It bridges the gap in the literature, where we have shown finite-time analysis with **linear speedup** and **no heterogeneity bias**.
+  * Key helper result: **Average of PGs from different MDPs is the PG of a suitably defined “average MDP”** – allowing us to use the gradient-domination condition that ensures fast rates.
+
+- Under a suitable choice of step-size, Fast-FedPG guarantees without the gradient-domination condition:
+
+![image](https://github.com/user-attachments/assets/b7e7e60f-1503-46d0-9426-c939192c4bde)
+
+- Takeaways:
+  - Without the gradient-domination condition, our result still achieves a **$\sqrt{N}$-fold speedup** with **no heterogeneity bias**.
+
+  - This result continues to hold even when the agents have different transition kernel $P_i$'s.
+
+
