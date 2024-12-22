@@ -2,6 +2,7 @@
 ## About this Paper
 - This is the first published paper during my pursuit of the PhD degree.
 - This paper was published at **IEEE Conference on Decision and Control** in 2024.
+- This paper is a **pure theoretical** one.
 - This work revolves around a _multi-agent reinforcement learning (MARL)_ setting, where each agent interacts with a **distinct** environment differing in the _regret function_ of its MDP.
 - The collective **goal** of the agents is to _communicate intermittently_ via a central server to find a policy that **minimizes the average of long-term cumulative regret across environments**.
 - A memory-based bias-correction policy gradient (PG) algorithm named "**_Fast-FedPG_**" is proposed, and we prove that under a _gradient-domination_ condition, Fast-FedPG guarantees
