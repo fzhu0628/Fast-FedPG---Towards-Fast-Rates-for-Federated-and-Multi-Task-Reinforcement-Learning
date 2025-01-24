@@ -81,7 +81,7 @@ where $G$ and $\mu$ are constants.
 ![image](https://github.com/user-attachments/assets/b7e7e60f-1503-46d0-9426-c939192c4bde)
 
 - Takeaways:
-  - Without the gradient-domination condition, our result still achieves a **$\sqrt{N}$-fold speedup** with **no heterogeneity bias**.
+  - Without the gradient-domination condition, our result still demonstrates a **$\sqrt{N}$-fold speedup** with **no heterogeneity bias**.
 
   - This result continues to hold even when the agents have different transition kernel $P_i$'s.
 
